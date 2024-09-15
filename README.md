@@ -1,4 +1,4 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
+[![CI](https://github.com/nogibjj/Nzarama_Kouadio_DE_Mini_Project2/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Nzarama_Kouadio_DE_Mini_Project2/actions/workflows/cicd.yml)
 ## Project #2: Pandas Descriptive Statistics Script
 
 ## Structure 
