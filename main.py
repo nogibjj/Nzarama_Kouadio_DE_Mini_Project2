@@ -61,15 +61,16 @@ def save_to_markdown(dataset):
         "killngs_by_police_officers_summary.md", "a", encoding="ISO-8859-1"
     ) as file:
         # Write header
-        file.write("# Police Killings Summary Report:\n")
+        file.write("# Police Killings Summary Report:\n\n")
 
         # Write summary statitics for age
+        file.write("# Summary statistics of age of people killed by police\n")
         for key, value in age_stats.items():
             file.write(f"{key.capitalize()}: {value}\n")
         file.write("\n\n")  # Add a new line
 
         # Write summary statitics for age
-        file.write("## Gender Distribution:\n")
+        file.write("# Gender Distribution of People Killed by Police:\n")
         file.write(gender_distribution.to_markdown())
         file.write("\n\n")
 

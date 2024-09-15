@@ -1,4 +1,6 @@
 # Police Killings Summary Report:
+
+# Summary statistics of age of people killed by police
 Category: age
 Mean: 37.36717062634989
 Median: 35.0
@@ -7,7 +9,7 @@ Min: 16.0
 Max: 87.0
 
 
-## Gender Distribution:
+# Gender Distribution of People Killed by Police:
 | gender   |   count |
 |:---------|--------:|
 | Male     |     445 |

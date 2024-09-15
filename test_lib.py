@@ -3,15 +3,16 @@ We test here
 
 """
 
-from mylib.lib import *
+from mylib.lib import (
+    load_dataset,
+    grab_mean,
+    grab_median,
+    grab_std_deviation,
+    grab_min,
+    grab_max,
+)
 
 test_dataset = "dataset/police_killings.csv"
-
-
-def testing_load_dataset():
-    """testing if dataset loads properly"""
-    content_df = load_dataset(test_dataset)
-    assert test_dataset is not None
 
 
 def testing_summary_statistics():
@@ -31,5 +32,4 @@ def testing_summary_statistics():
 
 
 if __name__ == "__main__":
-    testing_load_dataset()
     testing_summary_statistics()
