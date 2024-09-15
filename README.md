@@ -3,6 +3,7 @@
 
 ## Structure 
 
+```
 Nzarama_Kouadio_DE_Individual_Project1/
 ├── .devcontainer/
 │   ├── devcontainer.json
@@ -27,6 +28,7 @@ Nzarama_Kouadio_DE_Individual_Project1/
 ├── test_lib.py
 └── test_main.py
 
+```
 
 ## Goal of the project
 
