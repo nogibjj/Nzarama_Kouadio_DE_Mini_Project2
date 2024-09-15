@@ -9,7 +9,7 @@ Nzarama_Kouadio_DE_Individual_Project1/
 │   └── Dockerfile
 ├── .github/
 │   └── workflows/
-│       ├── cicd.yml
+│       └── cicd.yml
 ├── dataset
 │   └── police_killings_csv
 ├── mylib/
@@ -21,8 +21,6 @@ Nzarama_Kouadio_DE_Individual_Project1/
 ├── main.py
 ├── Makefile
 ├── README.md
-├── main.py
-├── Makefile
 ├── repeat.sh
 ├── requirements.txt
 ├── setup.sh
