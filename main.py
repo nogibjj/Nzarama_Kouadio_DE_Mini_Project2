@@ -2,7 +2,20 @@
 Main cli or app entry point
 """
 
-from mylib.lib import *
+import pandas as pd
+from mylib.lib import (
+    load_dataset,
+    grab_mean,
+    grab_median,
+    grab_std_deviation,
+    grab_min,
+    grab_max,
+    age_histogram,
+    gender_pie_chart,
+)
+
+# Loading the data
+dataset = "dataset/police_killings.csv"
 
 
 def general_describe(dataset, columns=None):
@@ -20,7 +33,7 @@ def general_describe(dataset, columns=None):
 def custom_describe(dataset, col):
     content_df = load_dataset(dataset)
     descriptive_dict = {
-        "name": col,
+        "category": col,
         "mean": grab_mean(content_df, col),
         "median": grab_median(content_df, col),
         "std": grab_std_deviation(content_df, col),
@@ -39,19 +52,31 @@ def chart_created(content_df, show_plot=False):
 def save_to_markdown(dataset):
     """save summary report to markdown"""
     content_df = load_dataset(dataset)
-    describe_df = general_describe(dataset, columns=["age", "gender", "raceethnicity"])
-    summary_table = describe_df.to_markdown()
+    # Generate individual column statistics
+    age_stats = custom_describe(dataset, "age")
+    gender_distribution = content_df["gender"].value_counts()
     chart_created(content_df, False)
     # Write the markdown table to a file
     with open(
         "killngs_by_police_officers_summary.md", "a", encoding="ISO-8859-1"
     ) as file:
-        file.write("Describe:\n")
-        file.write(summary_table)
+        # Write header
+        file.write("# Police Killings Summary Report:\n")
+
+        # Write summary statitics for age
+        for key, value in age_stats.items():
+            file.write(f"{key.capitalize()}: {value}\n")
         file.write("\n\n")  # Add a new line
+
+        # Write summary statitics for age
+        file.write("## Gender Distribution:\n")
+        file.write(gender_distribution.to_markdown())
+        file.write("\n\n")
+
+        # Include charts
         file.write("![age_image_fail_load](killings_per_age.png)\n")
         file.write("\n\n")  # Add a new line
-        file.write("![race_gender_image_fail_load](killings_by_gender.png)\n")
+        file.write("![gender_image_fail_load](killings_by_gender.png)\n")
 
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@ Test goes here
 
 """
 
-from main import *
+from main import general_describe, custom_describe, save_to_markdown
 
 test_dataset = "dataset/police_killings.csv"
 

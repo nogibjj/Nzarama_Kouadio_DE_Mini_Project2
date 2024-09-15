@@ -1,48 +1,19 @@
-Describe:
-|       |      age |
-|:------|---------:|
-| count | 463      |
-| mean  |  37.3672 |
-| std   |  12.9971 |
-| min   |  16      |
-| 25%   |  28      |
-| 50%   |  35      |
-| 75%   |  45      |
-| max   |  87      |
+# Police Killings Summary Report:
+Category: age
+Mean: 37.36717062634989
+Median: 35.0
+Std: 12.997134298989726
+Min: 16.0
+Max: 87.0
+
+
+## Gender Distribution:
+| gender   |   count |
+|:---------|--------:|
+| Male     |     445 |
+| Female   |      22 |
 
 ![age_image_fail_load](killings_per_age.png)
 
 
-![race_gender_image_fail_load](killings_by_gender.png)
-Describe:
-|       |      age |
-|:------|---------:|
-| count | 463      |
-| mean  |  37.3672 |
-| std   |  12.9971 |
-| min   |  16      |
-| 25%   |  28      |
-| 50%   |  35      |
-| 75%   |  45      |
-| max   |  87      |
-
-![age_image_fail_load](killings_per_age.png)
-
-
-![race_gender_image_fail_load](killings_by_gender.png)
-Describe:
-|       |      age |
-|:------|---------:|
-| count | 463      |
-| mean  |  37.3672 |
-| std   |  12.9971 |
-| min   |  16      |
-| 25%   |  28      |
-| 50%   |  35      |
-| 75%   |  45      |
-| max   |  87      |
-
-![age_image_fail_load](killings_per_age.png)
-
-
-![race_gender_image_fail_load](killings_by_gender.png)
+![gender_image_fail_load](killings_by_gender.png)

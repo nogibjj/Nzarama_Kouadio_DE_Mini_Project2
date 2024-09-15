@@ -1,37 +1,52 @@
 [![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
+## Project #2: Pandas Descriptive Statistics Script
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+## Structure 
+
+Nzarama_Kouadio_DE_Individual_Project1/
+├── .devcontainer/
+│   ├── devcontainer.json
+│   └── Dockerfile
+├── .github/
+│   └── workflows/
+│       ├── cicd.yml
+├── dataset
+│   └── police_killings_csv
+├── mylib/
+│   ├── __init__.py
+│   └── lib.py
+├── .gitignore
+├── Dockerfile
+├── LICENSE
+├── main.py
+├── Makefile
+├── README.md
+├── main.py
+├── Makefile
+├── repeat.sh
+├── requirements.txt
+├── setup.sh
+├── test_lib.py
+└── test_main.py
 
 
+## Goal of the project
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+This project analyzes the data on police killings in the United States. It uses Python, Pandas, and Matplotlib to generate summary statistics (mean, median, standard deviation) and visualizations. Additionally, a CI/CD pipeline is set up using GitHub Actions, and a summary report in Markdown format is generated as part of the pipeline.
 
-Things included are:
+## Features
+- Load and clean the dataset
+- Generate summary statistics (mean, median, standard deviation, minimum, maximum)
+- Create visualizations: histogram of killings by age and a pie chart by gender
+- CI/CD pipeline with GitHub Actions
+- Generate a Markdown summary report
 
-* `Makefile`
+## Set Up Instructions
 
-* `Pytest`
+1. Clone the repository using git clone 
+2. Install the required packages through -r requirements.txt
+3. Run the main script to generate the report
 
-* `pandas`
-
-* `Ruff`:  
-
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
-
-* `Dockerfile`
-
-* `GitHub copilot`
-
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
-
-* `githubactions`
-
-## References
-
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
 
 
 
